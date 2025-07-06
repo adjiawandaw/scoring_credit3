@@ -73,7 +73,7 @@ with st.container():
 @st.cache_data
 def load_data():
     try:
-        return pd.read_csv("../data/train.csv")
+        return pd.read_csv("data/train.csv")
     except:
         return pd.DataFrame()
 
@@ -95,7 +95,7 @@ with tab1:
 
     try:
         
-        df_test = pd.read_csv("../data/test.csv")
+        df_test = pd.read_csv("data/test.csv")
         id_col = [col for col in df_test.columns if "id" in col.lower()]
         if id_col:
             id_col = id_col[0]
