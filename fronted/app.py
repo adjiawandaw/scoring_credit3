@@ -35,7 +35,7 @@ def set_background(image_path):
         unsafe_allow_html=True
     )
 
-set_background("image7.jpg")
+set_background("fronted/image7.jpg")
 
 def load_lottiefile(filepath: str):
     with open(filepath, "r") as f:
